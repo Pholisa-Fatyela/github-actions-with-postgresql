@@ -3,7 +3,10 @@
 [![NodeJS CI with PostgreSQL](https://github.com/codex-academy/github-actions-with-postgresql/actions/workflows/NodeMochaTestsWithPostgreSQL.yml/badge.svg)](https://github.com/codex-academy/github-actions-with-postgresql/actions/workflows/NodeMochaTestsWithPostgreSQL.yml)
 
 
-# Database script to run the tests locally
+Look at the [NodeMochaTestsWithPostgreSQL.yml](https://github.com/codex-academy/github-actions-with-postgresql/blob/main/.github/workflows/NodeMochaTestsWithPostgreSQL.yml) file to see the required configuration.
+
+
+## Database script to run the tests locally
 
 ```
 create database gh_actions_test;
