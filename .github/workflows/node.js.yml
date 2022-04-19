@@ -32,9 +32,10 @@ jobs:
     - uses: actions/checkout@v3
     - name: Install dependencies
       run: npm install
+    - name: create postgresql tables
+      run: PGPASSWORD=gh123 psql -U gh -d gh_actions_test -f ./sql/users.sql
     - name: run tests with postgresql
-      run: |
-        PGPASSWORD=gh123 psql -U gh -d gh_actions_test -f ./sql/users.sql
+      run:
         npm test
       env:
         DATABASE_URL: postgres://gh:gh123@localhost:5432/gh_actions_test
