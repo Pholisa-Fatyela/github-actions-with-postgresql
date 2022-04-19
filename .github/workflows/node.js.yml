@@ -39,7 +39,7 @@ jobs:
     - name: Install dependencies
       run: npm install
     - name: create postgresql tables
-      run: PGPASSWORD=gh123 psql -U gh -d gh_actions_test -a -f ./sql/users.sql
+      run: PGPASSWORD=gh123 psql -h localhost -U gh -d gh_actions_test -a -f ./sql/users.sql
     - name: run tests with postgresql
       run:
         npm test
