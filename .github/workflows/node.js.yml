@@ -36,4 +36,4 @@ jobs:
       run: 
         npm test
       env:
-        DATABASE_URL=postgres://gh:gh123@localhost:5432/gh_actions_test
+        DATABASE_URL: postgres://gh:gh123@localhost:5432/gh_actions_test
