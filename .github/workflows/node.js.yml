@@ -33,7 +33,8 @@ jobs:
     - name: Install dependencies
       run: npm install
     - name: run tests with postgresql
-      run: 
+      run: |
+        PGPASSWORD=gh123 psql -U gh -d gh_actions_test -f ./sql/users.sql
         npm test
       env:
         DATABASE_URL: postgres://gh:gh123@localhost:5432/gh_actions_test
