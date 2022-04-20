@@ -20,7 +20,7 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
     services:
       postgres:
-        image: postgres:12-alpine
+        image: postgres:latest
         env: 
           POSTGRES_USER: gh
           POSTGRES_PASSWORD: gh123
