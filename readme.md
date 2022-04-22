@@ -11,7 +11,7 @@ Look at the [NodeMochaTestsWithPostgreSQL.yml](https://github.com/codex-academy/
 ```
 create database gh_actions_test;
 create role gh login password 'gh123';
-grant all privileges on database gh_actions_test to gh123;
+grant all privileges on database gh_actions_test to gh;
 ```
 
 Logged in as the `gh` user.
